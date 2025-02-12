@@ -1,2 +1,2 @@
 # javascript-labs
-the javascript labs from previous sems
+javascript labs
