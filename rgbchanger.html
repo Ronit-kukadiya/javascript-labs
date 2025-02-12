@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title></title>
+</head>
+<body>
+     <input type="button" value="Start BG" onclick="startCounter()">
+     <input type="button" value="Stop BG"  onclick="stopCounter()">
+     <input type="button" value="Start FG" onclick="startFG()">
+     <input type="button" value="Stop FG"  onclick="stopFG()">
+     <script type="text/javascript">
+         var c = 2 ;
+         function myFun(){
+          r = Math.ceil(Math.random()*255)
+          g = Math.ceil(Math.random()*255)
+          b = Math.ceil(Math.random()*255)
+          //document.getElementById("bodybg").style.backgroundColor="rgb("+r+", "+g+", "+b+")"
+          document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+         }
+        function startCounter(){
+          c=setInterval(myFun,500);
+         }
+        function stopCounter(){
+          clearInterval(c);
+        }
+        function myFG(){
+          r = Math.ceil(Math.random()*255)
+          g = Math.ceil(Math.random()*255)
+          b = Math.ceil(Math.random()*255)
+          document.getElementById("para").style.color="rgb("+r+", "+g+", "+b+")"
+        }
+        function startFG(){
+          C2 = setInterval(myFG,500);
+        }
+        function stopFG(){
+          clearInterval (C2);
+        }
+</script>
+<p id="para">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</body>
+</html>

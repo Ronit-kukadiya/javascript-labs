@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		n=parseInt(prompt("enter a number"))
+		sum=0;
+		temp=n;
+		rem=1;
+		while(n>0)
+		{
+			rem=parseInt(n%10);
+			sum=sum*10+rem;
+			n=parseInt(n/10);
+
+		}
+		if(temp==sum)
+		{
+			document.write("number is pelindrom");
+
+		}
+		else
+		{
+			document.write("number is not pelindeom ");
+		}
+	</script>
+
+</body>
+</html>

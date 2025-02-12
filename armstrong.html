@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <script type="text/javascript">
+        var n=parseInt(prompt("enter a number"));    //123
+        temp=n
+        digit=0
+        power=1
+        sum=0
+        while(temp!=0) {//123>0
+        	digit =parseInt(temp%10)//123%10=3    12%10=2   1%10=1
+            power=digit*digit*digit //3x3x3       2x2x2     1x1x1
+            temp=parseInt(temp/10)  //123/10=12   12/10=1   1/10=0
+            sum=sum+power           //9           9+8=17    9+8+1=18            
+        }
+        if (n==sum) {
+        	document.write('number is armstrong');
+        }
+        else{
+        	document.write('number is not armstrong');
+        }   
+   </script>
+</body>
+</html>

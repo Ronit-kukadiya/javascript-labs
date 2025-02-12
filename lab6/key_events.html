@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function onekey() {
+			var a = document.getElementById('movei');
+			alert('key pressed')
+		}
+		function keydown() {
+			var a = document.getElementById('movei');
+			alert('key down')
+		}
+		// function keyup() {
+		// 	var a = document.getElementById('movei');
+		// 	alert('key up')
+		// }
+
+		 // function move() {
+		 // 	var a = document.getElementById('movei');
+		 // 	alert('on mouse move was called');
+		 // }
+
+
+		 									
+	</script>
+</head>
+<body id="movei" onkeypress="onekey()" onkeydown="keydown()" onkeyup="keyup()">
+	 <div>
+       <h4>press a key to call onkeypress
+       .</h4><br>
+       <h4>press down on key</h4><br>
+       <h4>press up on key</h4><br>              
+     </div>
+
+
+</body>
+</html>
+array.splice(index,1);  to del

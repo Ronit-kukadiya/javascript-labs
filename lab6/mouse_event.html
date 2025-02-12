@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function oneclick() {
+			var a = document.getElementById('movei');
+			a.style.backgroundColor = 'red';
+		}
+		function twoclick() {
+			var a = document.getElementById('movei');
+			a.style.backgroundColor = 'blue';
+		}
+		function mousedwn() {
+			var a = document.getElementById('movei');
+			a.style.backgroundColor = 'green';
+		}
+		function mouseup() {
+			var a = document.getElementById('movei');
+			a.style.backgroundColor = 'yellow';
+		}
+
+
+		 // function move() {
+		 // 	var a = document.getElementById('movei');
+		 // 	alert('on mouse move was called');
+		 // }
+
+
+		 									
+	</script>
+</head>
+<body id="movei" onmousemove="move()">
+	 <div>
+       <h4 id="onclk">one click</h4><button onclick="oneclick()">on click</button>
+     </div> 
+     <div>
+       <h4 id="ondblclk">double click</h4><button ondblclick="twoclick()">on double click</button>
+     </div>
+     <div>
+       <h4 id="ondwn">mouse down</h4><button onmousedown="mousedwn()">on mouse down</button>
+     </div>
+     <div>
+       <h4 id="onup">mouse up</h4><button onmouseup="mouseup()">on mouse up</button>
+     </div>
+
+
+</body>
+</html>

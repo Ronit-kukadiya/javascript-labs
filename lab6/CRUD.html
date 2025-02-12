@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var arr=[]
+		function create_fn() {
+			str = document.getElementById('crat').value
+			arr.push(str);
+			display_fn();
+			document.getElementById('crat').value = ""
+		}
+                function display_fn() {
+        	        var add = document.getElementById('disp')
+        	        add.innerHTML="  "
+        	        for(ar of arr){
+                        add.innerHTML += "<tr><td>"+ar+"</td></tr>"
+        	        }
+                }
+		function del_fn() {
+			i = document.getElementById('indx').value
+			arr.splice(i,1);			
+			display_fn();	
+			document.getElementById('crat').value = ""		
+		}
+		function update_fn() {
+			var i = document.getElementById('upindx').value
+			var v = document.getElementById('upval').value
+			arr[i] = v;
+			// arr.splice(i,1);	array.splice(index,1);here 1 is to how many del		
+			display_fn();	
+			document.getElementById('crat').value = ""		
+		}
+	</script>
+</head>
+<body>
+<h1>crud</h1>
+
+<h3>create</h3>
+<input id="crat" type="text" name="" ><button id="" onclick="create_fn()">create word</button>
+
+<h3>read</h3>
+<table id="disp" ></table>
+
+<h3>delete</h3>
+<h5>enter index</h5>
+<input id="indx" type="number" name="" ><button id="" onclick="del_fn()">delete word</button>
+
+<h3>update</h3>
+<h5>enter index</h5><input id="upindx" type="text" name="">
+<h5>enter value</h5><input id="upval" type="text" name="">
+<button id="" onclick="update_fn()">update word</button>
+</body>
+</html>

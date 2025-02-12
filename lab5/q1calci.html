@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.btn{
+			height: 30px;
+			width: 30px;
+			color: firebrick;
+			/*position: absolute;*/
+		}
+		.boxval{
+			border: 2px solid black;
+			height: 25px;
+		}
+		.tbl{
+			
+		}
+	</style>
+
+
+	<script type="text/javascript">
+        function appendToResult(value){
+        	document.getElementById('result').value += value;
+        	console.log(value)
+        }
+	</script>
+        
+</head>
+<body>
+	<div class="tbl">
+	<table style="border: 2px solid black;">
+	<tr>
+		
+		<td colspan="4" height="25px"><input type="text" name="" id="result"></td>
+	</tr><br>
+    <tr >
+    	<td class="boxval"><button class="btn" onclick="appendToResult(7)">7</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(8)">8</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(9)">9</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(*)">*</button> </td>
+    </tr >
+        <tr>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(4)">4</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(5)">5</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(6)">6</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(-)">-</button> </td>
+    </tr>
+        <tr >
+    	<td class="boxval"><button class="btn" onclick="appendToResult(1)">1</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(2)">2</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(3)">3</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(+)">+</button> </td>
+    </tr>
+        <tr >
+    	<td class="boxval"><button class="btn" onclick="">C</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(0)">0</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(/)">/</button> </td>
+    	<td class="boxval"><button class="btn" onclick="appendToResult(=)">=</button> </td>
+    </tr>
+    </table>
+    </div>
+</body>
+</html>

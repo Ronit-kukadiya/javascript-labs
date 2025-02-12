@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+	<script type="text/javascript">
+		var i;
+		var n = parseInt(prompt("enter a length of array:"));
+		let a=[]; 
+		for(i=0;i<n;i++){
+		    a[i]= prompt("enter array elements:");
+		}
+		    //document.write("</br>")
+            document.write("original array</br>")  		
+		for(i=0;i<n;i++){
+            document.write(a[i]+"</br>")
+		}
+
+
+		var po = parseInt(prompt("how many elements to pop "));
+		for(i=0;i<po;i++){
+            a[i]
+            a.pop();
+		}
+		    document.write("</br>")
+            document.write("pop array</br>")  				
+        for(i=0;i<n;i++){
+            document.write(a[i]+"</br>")           
+		}
+
+
+		    document.write("</br>")
+            document.write("shifted array</br>")          		
+		var sh = parseInt(prompt("how many elements to shift:"));
+        for(i=0;i<sh;i++){
+            a[i]
+            a.shift();
+        }
+        for(i=0;i<n;i++){
+            document.write(a[i]+"</br>")           
+		}
+
+
+            document.write("</br>")  		
+            document.write("unshifted array </br>")	
+		var unsh = parseInt(prompt("unshift element:"));
+        for(i=0;i<unsh;i++){
+            a[i]
+            a.unshift(unsh);
+        }
+        for(i=0;i<n;i++){
+            document.write(a[i]+"</br>")           
+		}
+
+
+
+            document.write("</br>")  		
+            document.write("slice array </br>")	
+		var sl = parseInt(prompt("how many elements to slice:"));
+        for(i=0;i<sl;i++){
+            a[i]
+            a.slice();
+        }
+        for(i=0;i<n;i++){
+            document.write(a[i]+"</br>")           
+		}
+	</script>
+</body>
+</html>
